@@ -1,3 +1,16 @@
 require 'sinatra'
+require "sinatra/reloader" if development?
 
-puts "hello world"
+get '/' do
+  "Hello!"
+end
+
+get '/secret' do
+  "World"
+end
+
+get '/cat' do
+  "<div>
+    <img src='http://placekitten.com/500/500'>
+   </div>"
+end
