@@ -10,6 +10,9 @@ get '/secret' do
 end
 
 get '/cat' do
-  @name = ["Amigo", "Misty", "Almond"].sample
-  erb(:index)
+  <h1>"My name is <%= @name %>"</h1>
+  "<div>
+    <img src='http://placekitten.com/500/500'>
+   </div>"
+   
 end
